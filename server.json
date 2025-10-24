@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.paypal/paypal-mcp-server",
+  "description": "A command line tool for setting up PayPal MCP server",
+  "repository": {
+    "url": "https://github.com/paypal/paypal-mcp-server",
+    "source": "github"
+  },
+  "version": "1.7.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@paypal/mcp",
+      "version": "1.7.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "description": "YOUR_PAYPAL_ACCESS_TOKEN ref: https://docs.paypal.ai/developer/how-to/api/get-started ",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": true,
+          "name": "PAYPAL_ACCESS_TOKEN"
+        },
+        {
+          "description": "'SANDBOX' or 'LIVE'",
+          "isRequired": true,
+          "format": "string",
+          "isSecret": false,
+          "name": "PAYPAL_ENVIRONMENT"
+        }
+      ]
+    }
+  ]
+}
