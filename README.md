@@ -2,6 +2,7 @@
 ## PayPal Model Context Protocol
 
 The PayPal [Model Context Protocol](https://modelcontextprotocol.com/) server allows you to integrate with PayPal APIs through function calling. This protocol supports various tools to interact with different PayPal services.
+#Testing.
 
 To run the PayPal MCP server using npx, use the following command:
 
